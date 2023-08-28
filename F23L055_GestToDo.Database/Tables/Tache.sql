@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Tache]
+(
+	[Id] INT NOT NULL IDENTITY,
+	[Titre] NVARCHAR(128) NOT NULL,
+	[Finalise] BIT NOT NULL
+		CONSTRAINT DF_Todo_Finalise DEFAULT (0),
+    CONSTRAINT [PK_Todo] PRIMARY KEY ([Id]) 
+)

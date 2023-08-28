@@ -1,0 +1,9 @@
+﻿CREATE PROCEDURE [dbo].[CSP_CreerTache]
+	@Titre NVARCHAR(128)
+AS
+BEGIN
+	--TEST
+
+	INSERT INTO Tache (Titre) VALUES (@Titre);
+	RETURN 0
+END
